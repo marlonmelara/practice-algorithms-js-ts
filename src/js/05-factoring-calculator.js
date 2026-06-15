@@ -5,7 +5,7 @@ function getFactors(value) {
   const num = Number(value);
 
   if (isNaN(num) || num <= 0 || !Number.isInteger(num)) {
-    throw new Error('El valor debe ser un número entero mayor a cero');
+    throw new Error("El valor debe ser un número entero mayor a cero");
   }
 
   const factors = [];
@@ -22,10 +22,10 @@ function getFactors(value) {
 function displayFactoring(input) {
   try {
     const result = getFactors(input);
-    console.log(`Los factores de ${input} son ${result.join(', ')}`);
+    console.log(`Los factores de ${input} son ${result.join(", ")}`);
   } catch (error) {
     console.error(`Hubo un problema: ${error.message}`);
   }
 }
 
-displayFactoring('100');
+displayFactoring("100");

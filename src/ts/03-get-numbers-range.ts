@@ -12,9 +12,7 @@ export function getNumbers(a: string | number, b: string | number): number[] {
   const numB = Number(b);
 
   if (isNaN(numA) || isNaN(numB)) {
-    throw new Error(
-      'Los valores deben ser números o strings numéricos válidos'
-    );
+    throw new Error("Los valores deben ser números o strings numéricos válidos");
   }
 
   const min = Math.min(numA, numB);
@@ -38,16 +36,15 @@ export function displayResult(a: string | number, b: string | number): void {
     const result = getNumbers(a, b);
 
     if (result.length === 0) {
-      console.info('No hay números enteros que mostrar en el rango provisto');
+      console.info("No hay números enteros que mostrar en el rango provisto");
       return;
     }
 
-    console.log(`Números en el rango: ${result.join(', ')}`);
+    console.log(`Números en el rango: ${result.join(", ")}`);
   } catch (error) {
-    const message =
-      error instanceof Error ? error.message : 'Error desconocido';
+    const message = error instanceof Error ? error.message : "Error desconocido";
     console.error(`Hubo un problema: ${message}`);
   }
 }
 
-displayResult('10', 15);
+displayResult("10", 15);

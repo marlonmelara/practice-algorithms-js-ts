@@ -10,7 +10,7 @@
 function getFactors(value: number): number[] {
   // Validación de integridad en tiempo de ejecución
   if (value <= 0 || !Number.isInteger(value)) {
-    throw new Error('El valor debe ser un número entero mayor a cero');
+    throw new Error("El valor debe ser un número entero mayor a cero");
   }
 
   const factors: number[] = [];
@@ -33,11 +33,10 @@ function getFactors(value: number): number[] {
 function displayFactoring(input: number): void {
   try {
     const result = getFactors(input);
-    console.log(`Los factores de ${input} son: ${result.join(', ')}`);
+    console.log(`Los factores de ${input} son: ${result.join(", ")}`);
   } catch (error: unknown) {
     // Type Guard para manejar el error de forma segura
-    const errorMessage =
-      error instanceof Error ? error.message : 'Error inesperado';
+    const errorMessage = error instanceof Error ? error.message : "Error inesperado";
     console.error(`Hubo un problema: ${errorMessage}`);
   }
 }

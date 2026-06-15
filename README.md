@@ -118,15 +118,15 @@ pnpm run format:check
 
 ## Exercise List
 
-| # | Exercise | JS | TS | Docs |
-|---|----------|----|----|------|
-| 01 | Identify Number | ✓ | ✓ | ✓ |
-| 02 | Sum and Average | ✓ | ✓ | ✓ |
-| 03 | Get Numbers Range | ✓ | ✓ | ✓ |
-| 04 | Get Odd Numbers | ✓ | ✓ | ✓ |
-| 05 | Factoring Calculator | ✓ | ✓ | ✓ |
-| 06 | Misc Array | ✓ | ✓ | ✓ |
-| 07 | Tech Search Array | ✓ | ✓ | ✓ |
+| #   | Exercise             | JS  | TS  | Docs |
+| --- | -------------------- | --- | --- | ---- |
+| 01  | Identify Number      | ✓   | ✓   | ✓    |
+| 02  | Sum and Average      | ✓   | ✓   | ✓    |
+| 03  | Get Numbers Range    | ✓   | ✓   | ✓    |
+| 04  | Get Odd Numbers      | ✓   | ✓   | ✓    |
+| 05  | Factoring Calculator | ✓   | ✓   | ✓    |
+| 06  | Misc Array           | ✓   | ✓   | ✓    |
+| 07  | Tech Search Array    | ✓   | ✓   | ✓    |
 
 ---
 
@@ -142,11 +142,13 @@ pnpm run format:check
 ## Exercise Format
 
 Each exercise includes:
+
 - `src/js/XX-exercise-name.js` - JavaScript implementation
 - `src/ts/XX-exercise-name.ts` - TypeScript implementation
 - `src/ejercicios-de-logica.md` - Problem statements & explanations
 
 Files feature:
+
 - Problem statement and requirements
 - Step-by-step explanation
 - Complete solution code with comments
@@ -183,4 +185,4 @@ MIT
 
 ---
 
-*Part of code-practice learning path | 2026*
+_Part of code-practice learning path | 2026_

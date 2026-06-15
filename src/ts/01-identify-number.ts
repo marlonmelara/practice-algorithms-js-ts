@@ -12,7 +12,7 @@ function identifyNumber(a: number, b: number): string {
   } else if (b > a) {
     return `${b} es mayor y ${a} es el menor`;
   } else {
-    return 'Ambos números son iguales';
+    return "Ambos números son iguales";
   }
 }
 
