@@ -11,7 +11,9 @@ function getOddNumbers(a: number | string, b: number | string): number[] {
   const numB = Number(b);
 
   if (isNaN(numA) || isNaN(numB)) {
-    throw new Error("Los valores deben ser números o cadenas numéricas válidas");
+    throw new Error(
+      'Los valores deben ser números o cadenas numéricas válidas'
+    );
   }
 
   const min = Math.min(numA, numB);
@@ -35,7 +37,7 @@ function displayResult(a: number | string, b: number | string): void {
     const result = getOddNumbers(a, b);
 
     if (result.length === 0) {
-      console.log("No hay impares");
+      console.log('No hay impares');
     } else {
       console.log(result);
     }
@@ -47,4 +49,4 @@ function displayResult(a: number | string, b: number | string): void {
   }
 }
 
-displayResult("20", 10);
+displayResult('20', 10);

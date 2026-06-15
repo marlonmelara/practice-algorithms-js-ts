@@ -8,12 +8,12 @@ function calculateStatistics() {
   let currentNumber = 0;
 
   do {
-    const input = prompt("Introduce un número (negativo para terminar):");
+    const input = prompt('Introduce un número (negativo para terminar):');
 
     // Manejo de la cancelación del prompt (null) o entrada vacía
     // Esta validación surgió gracias al tipado 'string | null' de TS
-    if (input === null || input.trim() === "") {
-      alert("Entrada cancelada o vacía. Por favor, ingresa un número.");
+    if (input === null || input.trim() === '') {
+      alert('Entrada cancelada o vacía. Por favor, ingresa un número.');
       continue;
     }
 
@@ -21,7 +21,7 @@ function calculateStatistics() {
 
     // Validación de tipo y lógica de negocio
     if (Number.isNaN(currentNumber)) {
-      alert("Por favor, introduce un número válido.");
+      alert('Por favor, introduce un número válido.');
     } else if (currentNumber >= 0) {
       sum += currentNumber;
       count++;
@@ -44,7 +44,7 @@ function displayResults(stats) {
     console.log(message);
     alert(message);
   } else {
-    console.warn("No se introdujeron números válidos para calcular.");
+    console.warn('No se introdujeron números válidos para calcular.');
   }
 }
 

@@ -5,7 +5,7 @@ function getNumbers(a, b) {
   const numA = Number(a);
   const numB = Number(b);
   if (isNaN(numA) || isNaN(numB)) {
-    throw new Error("Los valores deben ser números válidos");
+    throw new Error('Los valores deben ser números válidos');
   }
 
   const min = Math.min(numA, numB);
@@ -26,7 +26,7 @@ function displayResult(a, b) {
   try {
     const result = getNumbers(a, b);
     if (result.length === 0) {
-      console.log("No hay números enteros que mostrar en el rango provisto");
+      console.log('No hay números enteros que mostrar en el rango provisto');
     } else {
       console.log(`Números en el rango: ${result}`);
     }
@@ -35,4 +35,4 @@ function displayResult(a, b) {
   }
 }
 
-displayResult("10", 15);
+displayResult('10', 15);

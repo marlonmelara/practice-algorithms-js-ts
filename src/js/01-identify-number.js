@@ -1,8 +1,8 @@
 // Ejercicio 1
 // Crea un programa que pase dos números y que nos diga cuál es el mayor, el menor y si son iguales.
 function identifyNumber(a, b) {
-  if (typeof a !== "number" || typeof b !== "number") {
-    throw new Error("Ambos valores deben ser números");
+  if (typeof a !== 'number' || typeof b !== 'number') {
+    throw new Error('Ambos valores deben ser números');
   }
 
   if (a > b) {
@@ -10,7 +10,7 @@ function identifyNumber(a, b) {
   } else if (b > a) {
     return `${b} es mayor y ${a} es el menor`;
   } else {
-    return "Ambos números son iguales";
+    return 'Ambos números son iguales';
   }
 }
 
