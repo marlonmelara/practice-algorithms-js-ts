@@ -1,0 +1,17 @@
+{
+  "rules": {
+    "correctness": "all",
+    "suspicious": "all",
+    "perf": "all"
+  },
+  "settings": {
+    "jsdoc": {
+      "objectCurlySpacing": true,
+      "allowEmptyDescription": true
+    }
+  },
+  "ignorePatterns": [
+    "dist/",
+    "node_modules/"
+  ]
+}
